@@ -1,1 +1,1 @@
-# przelicznik-eur
+# Przelicznik Euro
