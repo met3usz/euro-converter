@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/result.css" />
+    <title>Kantor</title>
+  </head>
+
+  <body>
+    <form class="form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Kalkulator walut</legend>
+        <p>
+          <label class="form__label" for="cost">Wpisz kwotę w Euro:</label>
+          <br />
+          <input
+            class="form__input js-cost"
+            type="number"
+            name="cost"
+            min="1"
+            required
+            step="0.01"
+          />
+        </p>
+        <p>
+          <label class="form__label" for="rate"
+            >Wpisz aktualny kurs Euro:</label
+          >
+          <br />
+          <input
+            class="form__input js-rate"
+            type="number"
+            name="rate"
+            min="1"
+            required
+            step="0.01"
+          />
+        </p>
+        <input class="form__button js-submit" type="submit" value="Przelicz!" />
+        <input class="form__button" type="reset" value="Wyczyść!" />
+      </fieldset>
+    </form>
+
+    <p class="result">
+      Kwota po przeliczeniu: <span class="result__span js-span"></span> PLN
+    </p>
+  </body>
+</html>
