@@ -1,9 +1,9 @@
-# Przelicznik Euro
+# Euro Converter
 
-Jest to prosty w obsłudze kalkulator, który przelicza Euro na Polskie Złotówki
+This is an easy-to-use calculator that converts Euros into Polish Zlotys.
 
-![zdjęcie kalkulatora][logo]
+![screenshot of calculator][logo]
 
-[Odwiedź stronę](https://met3usz.github.io/przelicznik-eur/)
+[Visit the website](https://met3usz.github.io/przelicznik-eur/)
 
 [logo]: https://i.imgur.com/g4BzBxR.png
