@@ -1,16 +1,19 @@
-let form = document.querySelector('.form');
-let cost = document.querySelector('.js-cost');
-let rate = document.querySelector('.js-rate');
-let submit = document.querySelector('.js-submit');
-let resultSpan = document.querySelector('.js-span');
+{
+  const form = document.querySelector('.form');
+  const cost = document.querySelector('.js-cost');
+  const rate = document.querySelector('.js-rate');
+  const resultSpan = document.querySelector('.js-span');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+  const calculate = (cost, rate) => {
+    return cost.value * rate.value;
+  };
 
-  let value = cost.value;
-  let amount = rate.value;
+  const result = () => {
+    resultSpan.innerText = calculate(cost, rate).toFixed(2);
+  };
 
-  let result = value * amount;
-
-  resultSpan.innerText = result.toFixed(2);
-});
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    result();
+  });
+}
