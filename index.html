@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="../svg/Cloudy.svg" />
     <script src="./app.js" defer></script>
 
     <link
@@ -31,7 +32,6 @@
         <legend class="form__legend">Kalkulator walut</legend>
         <p>
           <label class="form__label" for="cost">Wpisz kwotę w Euro:</label>
-          <br />
           <input
             class="form__input js-cost"
             type="number"
@@ -45,7 +45,6 @@
           <label class="form__label" for="rate"
             >Wpisz aktualny kurs Euro:</label
           >
-          <br />
           <input
             class="form__input js-rate"
             type="number"
@@ -61,7 +60,7 @@
     </form>
 
     <p class="result">
-      Kwota po przeliczeniu: <span class="result__span js-span"></span> PLN
+      Kwota po przeliczeniu: <span class="result__span js-span">0</span> PLN
     </p>
   </body>
 </html>
